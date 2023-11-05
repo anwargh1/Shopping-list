@@ -1,0 +1,10 @@
+.category {
+    color: rgb(253, 253, 253);
+    background-color: rgba(170, 145, 145, 0.825);
+    border-radius: 4px;
+    padding: 12px 20px;
+}
+
+.icon {
+    font-size: 40px;
+}

@@ -1,0 +1,22 @@
+.categories {
+    padding: 8px 20px;
+    margin: 30px 0 20px 0;
+
+}
+
+.categories h1 {
+    text-align: start;
+    border-bottom: 4px solid rgba(170, 145, 145, 0.825);
+    width: fit-content;
+    font-family: Cinzel;
+    margin: 20px;
+    padding: 12px;
+
+}
+
+.categories .flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}

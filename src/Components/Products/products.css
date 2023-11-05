@@ -1,0 +1,112 @@
+.display-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.products {
+    padding: 8px 20px;
+    position: relative;
+}
+
+.products h2 {
+    text-align: start;
+    border-bottom: 4px solid rgba(170, 145, 145, 0.825);
+    width: fit-content;
+    font-family: Cinzel;
+    margin: 20px;
+    padding: 12px;
+}
+
+.filter-menu {
+    text-align: start;
+    border-bottom: 2px solid rgba(170, 145, 145, 0.825);
+    width: fit-content;
+    font-family: Cinzel;
+    margin: 20px;
+    padding: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: border-bottom .5s ease, color .5s ease;
+
+}
+
+.filter-menu:hover {
+    border-bottom: 2px solid rgb(208, 22, 130);
+    color: rgb(208, 22, 130);
+}
+
+.filter-wrapper {
+    position: absolute;
+    width: 300px;
+    height: 30rem;
+    background-color: #ffffff;
+    transition: right 0.3s;
+}
+
+
+.filter-wrapper.open {
+    left: 0;
+}
+
+.content.filter-open {
+    margin-left: 300px;
+}
+
+.content {
+    transition: margin-left 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+}
+
+.pagination>.active>a {
+    background-color: #898858;
+    border-color: #908f5a;
+    color: #fff;
+}
+
+.pagination>li>a {
+    border: 2px solid #eb9cc2;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 1px;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #eb9cc2;
+    border-color: #eb9cc2;
+    outline: none;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #eb9cc2;
+    font-family: Cinzel;
+    font-size: 12px;
+    font-weight: 800;
+
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-radius: unset
+}

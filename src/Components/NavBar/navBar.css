@@ -1,0 +1,119 @@
+
+a {
+    color: rgb(46, 46, 46);
+    text-decoration: none;
+}
+
+.navBar {
+    padding: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255 255 255);
+    color: rgb(50, 50, 50);
+    font-family: "Sorts Mill Goudy";
+    height: 80px;
+    /* box-shadow: 0 0px 10px rgba(130, 130, 130, 0.4); */
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side {
+    width: 70%;
+}
+
+.nav-list {
+    list-style: none;
+    gap: 30px;
+    font-weight: 400;
+    font-size: 19px;
+    font-variant: all-petite-caps;
+    letter-spacing:1.5px;
+    cursor: pointer;
+    border-bottom: 1px solid #202020e1;
+    padding: 20px 20px;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li:hover {
+    color: rgb(13, 13, 13);
+    font-weight: 550;
+
+}
+
+.nav-actions {
+    gap: 12px;
+}
+
+
+.login-button,
+.signup-button {
+    background: none;
+    border: none;
+    border-radius: 4px;
+    color: rgb(46, 46, 46);
+    font-family: "Sorts Mill Goudy";
+    font-variant: all-petite-caps;
+    font-size: 19px;
+    cursor: pointer;
+    letter-spacing:1.5px;
+}
+
+
+.nav-actions button:hover {
+    color: rgb(13, 13, 13);
+    font-weight: 600;
+}
+
+.cart {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    right: 0;
+    width: 300px;
+    max-width: 355px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #00000033;
+    padding: 20px 0px;
+    overflow-y: scroll;
+    height: 100%;
+    transition: opacity 0.3s linear, transform 0.3s linear;
+    opacity: 0;
+    transform: translateX(100%);
+    scrollbar-width: thin;
+    scrollbar-color: #464646 transparent;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #5b5b5b;
+        border-radius: 4px;
+    }
+
+
+}
+
+.cart.open {
+    opacity: 1;
+    transform: translateX(0);
+}
+
