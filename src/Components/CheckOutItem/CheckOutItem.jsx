@@ -21,9 +21,9 @@ const CheckOutItem = ({item}) => {
       <p>{item.title}</p>
       <p>{item.category}</p>
       <p>{item.color}</p>
-      <p className="bag-product-price">Price : <span>${item.price}</span></p>
+      <p className="bag-product-price">Price : <span>{'$' +item.price}</span></p>
       <p className="bag-product-quantity"> Quantity : <span>{item.quantity}</span></p>
-      <p className="bag-product-subTotal">SubTotal : <span>${item.price*item.quantity}</span></p>
+      <p className="bag-product-subTotal">SubTotal : <span>{'$' +item.price*item.quantity}</span></p>
     </div>
   </div>
   )

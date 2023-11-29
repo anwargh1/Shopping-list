@@ -38,7 +38,7 @@ const CheckOut = () => {
           <div className="order-bag" data-testid="order-summary-container">
             <p className="order-summary-bag">ORDER SUMMARY</p>
             <div className="order-details-bag">
-            <p className="total-bag">
+            <p className="total-bag" data-testid="total-bag">
                     Total: <span>{'$' + total}</span>
             </p>
             <form onSubmit={handleSubmit}>
